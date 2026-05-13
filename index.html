@@ -1,129 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nature Vibes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Basic Website</title>
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: Arial, sans-serif;
-    }
-
     body{
-        line-height:1.6;
-        color:#fff;
-        background: #1e3a8a;
+        margin:0;
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        color:#333;
     }
 
     header{
-        height:100vh;
-        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        padding:20px;
-    }
-
-    header h1{
-        font-size:3rem;
-        margin-bottom:10px;
-    }
-
-    header p{
-        font-size:1.2rem;
-        max-width:600px;
-    }
-
-    .btn{
-        margin-top:20px;
-        padding:10px 20px;
-        background:#22c55e;
-        border:none;
+        background:#2563eb;
         color:white;
-        cursor:pointer;
-        border-radius:25px;
-        text-decoration:none;
-        transition:0.3s;
+        padding:20px;
+        text-align:center;
     }
 
-    .btn:hover{
-        background:#16a34a;
+    nav{
+        background:#1e40af;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        padding:10px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        text-decoration:underline;
     }
 
     section{
-        padding:60px 20px;
+        padding:40px;
         text-align:center;
-    }
-
-    .features{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:20px;
     }
 
     .card{
-        background:#1e293b;
+        background:white;
         padding:20px;
-        border-radius:12px;
-        width:250px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.3);
-        transition:transform 0.3s;
-    }
-
-    .card:hover{
-        transform:translateY(-5px);
+        margin:20px auto;
+        width:80%;
+        max-width:600px;
+        border-radius:10px;
+        box-shadow:0 2px 10px rgba(0,0,0,0.1);
     }
 
     footer{
-        background:#0b1220;
+        background:#111827;
+        color:white;
         text-align:center;
-        padding:20px;
-        font-size:0.9rem;
+        padding:15px;
+        position:relative;
+        bottom:0;
+        width:100%;
     }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Explore Nature</h1>
-    <p>A lightweight and beautiful website template inspired by mountains, rivers, and forests.</p>
-    <a href="#features" class="btn">Get Started</a>
+    <h1>Welcome to My Basic Website</h1>
+    <p>Simple HTML + CSS Demo Project</p>
 </header>
 
-<section id="features">
-    <h2>Features</h2>
-    <div class="features">
-        <div class="card">
-            <h3>Clean Design</h3>
-            <p>Simple and modern UI with minimal code.</p>
-        </div>
-        <div class="card">
-            <h3>Fast Loading</h3>
-            <p>Optimized for performance and speed.</p>
-        </div>
-        <div class="card">
-            <h3>Responsive</h3>
-            <p>Works perfectly on mobile and desktop.</p>
-        </div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <div class="card">
+        <h2>Home</h2>
+        <p>This is a simple basic website created using only HTML and CSS.</p>
     </div>
 </section>
 
-<section>
-    <h2>About</h2>
-    <p style="max-width:700px;margin:auto;">
-        This template is designed to be lightweight yet visually appealing. You can easily customize it for portfolios, travel blogs, or landing pages.
-    </p>
+<section id="about">
+    <div class="card">
+        <h2>About</h2>
+        <p>This website is lightweight and easy to deploy using Jenkins or any CI/CD pipeline.</p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="card">
+        <h2>Services</h2>
+        <p>We provide web development, design, and deployment automation services.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: example@email.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
 </section>
 
 <footer>
-    © 2026 Nature Vibes | Built with simple HTML & CSS
+    © 2026 My Basic Website | All Rights Reserved
 </footer>
 
 </body>
