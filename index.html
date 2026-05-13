@@ -3,111 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Basic Website</title>
+<title>Modern Landing Page</title>
 <style>
-    body{
+    *{
         margin:0;
+        padding:0;
+        box-sizing:border-box;
         font-family: Arial, sans-serif;
-        background:#f4f4f4;
-        color:#333;
+    }
+
+    body{
+        background:#0b1220;
+        color:white;
     }
 
     header{
-        background:#2563eb;
-        color:white;
-        padding:20px;
-        text-align:center;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 50px;
+        background:#111827;
     }
 
-    nav{
-        background:#1e40af;
-        display:flex;
-        justify-content:center;
-        gap:20px;
-        padding:10px;
+    .logo{
+        font-size:20px;
+        font-weight:bold;
+        color:#38bdf8;
     }
 
     nav a{
         color:white;
+        margin:0 15px;
         text-decoration:none;
-        font-weight:bold;
     }
 
     nav a:hover{
-        text-decoration:underline;
+        color:#38bdf8;
     }
 
-    section{
-        padding:40px;
+    .hero{
+        height:90vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
         text-align:center;
+        padding:20px;
+        background:linear-gradient(135deg,#1e3a8a,#0f172a);
+    }
+
+    .hero h1{
+        font-size:3rem;
+        margin-bottom:10px;
+    }
+
+    .hero p{
+        max-width:600px;
+        opacity:0.8;
+    }
+
+    .btn{
+        margin-top:20px;
+        padding:12px 25px;
+        background:#38bdf8;
+        border:none;
+        color:black;
+        font-weight:bold;
+        border-radius:25px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#0ea5e9;
+    }
+
+    .features{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        padding:60px 20px;
+        flex-wrap:wrap;
     }
 
     .card{
-        background:white;
+        background:#111827;
         padding:20px;
-        margin:20px auto;
-        width:80%;
-        max-width:600px;
-        border-radius:10px;
-        box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        border-radius:12px;
+        width:250px;
+        text-align:center;
+        box-shadow:0 0 10px rgba(0,0,0,0.4);
     }
 
     footer{
-        background:#111827;
-        color:white;
         text-align:center;
-        padding:15px;
-        position:relative;
-        bottom:0;
-        width:100%;
+        padding:20px;
+        background:#111827;
+        margin-top:30px;
+        font-size:14px;
+        opacity:0.8;
     }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Basic Website</h1>
-    <p>Simple HTML + CSS Demo Project</p>
+    <div class="logo">DevLanding</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-    <div class="card">
-        <h2>Home</h2>
-        <p>This is a simple basic website created using only HTML and CSS.</p>
-    </div>
+<section class="hero" id="home">
+    <h1>Build Fast CI/CD Projects</h1>
+    <p>A modern lightweight landing page perfect for Jenkins, GitHub, and deployment demos.</p>
+    <button class="btn">Get Started</button>
 </section>
 
-<section id="about">
+<section class="features" id="features">
     <div class="card">
-        <h2>About</h2>
-        <p>This website is lightweight and easy to deploy using Jenkins or any CI/CD pipeline.</p>
+        <h3>⚡ Fast</h3>
+        <p>Lightweight and quick loading website.</p>
     </div>
-</section>
 
-<section id="services">
     <div class="card">
-        <h2>Services</h2>
-        <p>We provide web development, design, and deployment automation services.</p>
+        <h3>🔧 Simple</h3>
+        <p>No frameworks, only HTML and CSS.</p>
     </div>
-</section>
 
-<section id="contact">
     <div class="card">
-        <h2>Contact</h2>
-        <p>Email: example@email.com</p>
-        <p>Phone: +91-XXXXXXXXXX</p>
+        <h3>🚀 Deployable</h3>
+        <p>Perfect for Jenkins CI/CD pipeline demo.</p>
     </div>
 </section>
 
 <footer>
-    © 2026 My Basic Website | All Rights Reserved
+    © 2026 DevLanding | CI/CD Demo Project
 </footer>
 
 </body>
